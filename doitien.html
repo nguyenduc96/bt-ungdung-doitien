@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Đổi tiền</title>
+</head>
+<style>
+    select{
+        width: 100px;
+        height: 30px;
+    }
+    .quydoi {
+        color: blue;
+    }
+
+</style>
+<body>
+<table>
+    <tr>
+        <th>Số tiền chuyển đổi</th>
+        <th>Từ tiền tệ</th>
+        <th>Sang tiền tệ</th>
+    </tr>
+    <tr>
+        <td>
+            <input type="text" id="nhapsotien" style="height: 25px" placeholder="Nhập số tiền">
+        </td>
+        <td>
+            <select name="" id="giatri1">
+                <option value="s1">VNĐ</option>
+                <option value="s2">USD</option>
+            </select>
+        </td>
+        <td>
+            <select name="" id="giatri2">
+                <option value="s2">USD</option>
+                <option value="s1">VNĐ</option>
+            </select>
+        </td>
+        <td style="width: 150px">
+            <button onclick="doitien()">Chuyển đổi</button>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="4">
+            <label>Giá trị sau quy đổi:</label>
+            <label class="quydoi" id="sauquydoi" ></label>
+        </td>
+
+    </tr>
+    <script src="js-doitien.js"></script>
+</table>
+</body>
+</html>
